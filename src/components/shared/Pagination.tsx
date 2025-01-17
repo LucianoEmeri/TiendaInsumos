@@ -17,7 +17,7 @@ export const Pagination = ({ totalItems, page, setPage }: Props) => {
 	const totalPages = totalItems
 		? Math.ceil(totalItems / itemsPerPage)
 		: 1;
-	const isLastPage = page >= totalPages;
+	const isLastPage = page >= totalPages; 
 
 	const startItem = (page - 1) * itemsPerPage + 1; // 1 -> 11 -> 21
 	const endItem = Math.min(page * itemsPerPage, totalItems);
