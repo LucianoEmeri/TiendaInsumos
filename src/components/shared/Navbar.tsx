@@ -6,8 +6,14 @@ import {
 } from 'react-icons/hi';
 import { FaBarsStaggered } from 'react-icons/fa6';
 import { Logo } from './Logo';
+import { useGlobalStore } from '../../store/global.store';
+import { useCartStore } from '../../store/cart.store';
 
 export const Navbar = () => {
+  const openSheet = useGlobalStore(state => state.openSheet);
+  const setActiveNavMobile = useGlobalStore(state => state.setActiveNavMobile);
+  const totalItemsInCart = useCartStore(state => state.totalItemsInCart);
+
   return (
     <header
       className='text-white py-4 flex items-center justify-between px-5 lg:px-12 fixed top-0 left-0 w-full z-50'
@@ -35,27 +41,27 @@ export const Navbar = () => {
 
       <div className='flex gap-5 items-center'>
         <button>
-          <HiOutlineSearch size={25} className='text-white' />
+          <HiOutlineSearch size={25} className='text-white' onClick={() => openSheet('search')} />
         </button>
 
         <div className='relative'>
           <Link
-            to='/account'
+            to='/cuenta'
             className='border-2 border-slate-200 w-9 h-9 rounded-full grid place-items-center text-lg font-bold text-white'
           >
             A
           </Link>
         </div>
 
-        <button className='relative'>
+        <button className='relative' onClick={() => openSheet('cart')}>
           <span className='absolute -bottom-2 -right-2 w-5 h-5 grid place-items-center bg-black text-white text-xs rounded-full'>
-            0
+            {totalItemsInCart}
           </span>
           <HiOutlineShoppingBag size={25} className='text-white' />
         </button>
       </div>
 
-      <button className='md:hidden'>
+      <button className='md:hidden' onClick={() => setActiveNavMobile(true)}>
         <FaBarsStaggered size={25} className='text-white' />
       </button>
     </header>
