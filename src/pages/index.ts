@@ -5,3 +5,4 @@ export * from './InsumoPage';
 export * from './LoginPage';
 export * from './RegisterPage';
 export * from './OrdersUserPage';
+export * from './ThankyouPage';
