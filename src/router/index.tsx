@@ -1,6 +1,7 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { RootLayout } from '../layouts/RootLayout';
-import { HomePage, InsumosPage, AboutPage, InsumoPage } from '../pages';
+import { HomePage, InsumosPage, AboutPage, InsumoPage, LoginPage, RegisterPage, OrdersUserPage } from '../pages';
+import { ClientLayout } from '../layouts/ClientLayout';
 
 export const router = createBrowserRouter([
 	{
@@ -22,6 +23,28 @@ export const router = createBrowserRouter([
 			{
 				path: 'nosotros',
 				element: <AboutPage />,
+			},
+			{
+				path: 'ingresar',
+				element: <LoginPage />,
+			},
+			{
+				path: 'registro',
+				element: <RegisterPage />,
+			},
+			{
+				path: 'cuenta',
+				element: <ClientLayout />,
+				children: [
+					{
+						path: '',
+						element: <Navigate to='/cuenta/pedidos'/>,
+					},
+					{
+						path: 'pedidos',
+						element: <OrdersUserPage/>,
+					}
+				]
 			},
 		],
 	},
