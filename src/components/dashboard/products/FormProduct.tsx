@@ -116,6 +116,7 @@ export const FormProduct = ({ titleForm }: Props) => {
 					<button
 						className='bg-white p-1.5 rounded-md shadow-sm border border-slate-200 transition-all group hover:scale-105'
 						onClick={() => navigate(-1)}
+						aria-label="Volver a la lista de productos"
 					>
 						<IoIosArrowBack
 							size={18}
@@ -151,7 +152,7 @@ export const FormProduct = ({ titleForm }: Props) => {
 				<SectionFormProduct>
 					<InputForm
 						type='text'
-						label='Slug'
+						label='Link'
 						name='slug'
 						placeholder='papel-a4'
 						register={register}
@@ -204,10 +205,15 @@ export const FormProduct = ({ titleForm }: Props) => {
 						className='btn-secondary-outline'
 						type='button'
 						onClick={() => navigate(-1)}
+						aria-label="Cancelar la edición del producto"
 					>
 						Cancelar
 					</button>
-					<button className='btn-primary' type='submit'>
+					<button
+						className='btn-primary'
+						type='submit'
+						aria-label="Guardar los cambios del producto"
+					>
 						Guardar Producto
 					</button>
 				</div>
