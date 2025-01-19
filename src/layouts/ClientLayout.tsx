@@ -43,7 +43,7 @@ export const ClientLayout = () => {
 
 				{role === 'admin' && (
 					<NavLink
-						to='/dashboard/insumos'
+						to='/dashboard/productos'
 						className='flex items-center gap-1 hover:underline'
 					>
 						Dashboard

@@ -1,12 +1,12 @@
 import { Separator } from '../shared/Separator';
 
 const availableBrands = [
-	'Samsung',
-	'Apple',
-	'Huawei',
-	'Xiaomi',
-	'Realme',
-	'Honor',
+	'3M',
+	'Dupont',
+	'Kodak',
+	'Bosch',
+	'Honeywell',
+	'Staples',
 ];
 
 interface Props {

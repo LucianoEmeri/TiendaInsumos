@@ -16,7 +16,7 @@ export const RootLayout = () => {
 		<div className="h-screen flex flex-col font-montserrat">
 			<Navbar />
 
-			<div className="pt-[68px] flex-1">
+			<div className="pt-[64px] flex-1">
 				{pathname === '/' && <Banner />}
 
 				<main className="container my-8">

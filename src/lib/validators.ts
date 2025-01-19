@@ -86,7 +86,7 @@ export const productSchema = z.object({
 				id: z.string().optional(),
 				stock: z.number(),
 				price: z.number().min(0.01, 'El precio debe ser mayor a 0'),
-				storage: z.string().min(1, 'El almacenamiento es requerido'),
+				storage: z.string().min(1, 'Las especificaciones son requeridas'),
 				color: z
 					.string()
 					.regex(

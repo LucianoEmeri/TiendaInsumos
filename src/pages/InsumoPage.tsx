@@ -207,7 +207,7 @@ export const InsumoPage = () => {
 							{availableColors.map(color => (
 								<button
 									key={color}
-									className={`w-8 h-8 rounded-full flex justify-center items-center ${
+									className={`w-8 h-8 rounded-full flex justify-center items-center border border-opacity-30 border-black ${
 										selectedColor === color
 											? 'border border-slate-800'
 											: ''
@@ -226,7 +226,7 @@ export const InsumoPage = () => {
 					{/* OPCIONES DE ALMACENAMIENTO */}
 					<div className='flex flex-col gap-3'>
 						<p className='text-xs font-medium'>
-							Almacenamiento disponible
+						Especificaciones:
 						</p>
 
 						{selectedColor && (
