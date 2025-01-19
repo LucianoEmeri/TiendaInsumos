@@ -5,7 +5,7 @@ export const Newsletter = () => {
 			<div
 				className='absolute inset-0 bg-cover bg-center opacity-70 h-full'
 				style={{
-					backgroundImage: 'url(https://sdygfmfocvxwbeoojqwh.supabase.co/storage/v1/object/public/product-images/img/newsletter.jpg)',
+					backgroundImage: 'urlhttps://sdygfmfocvxwbeoojqwh.supabase.co/storage/v1/object/public/product-images/img/newsletter.webp)',
 				}}
 			/>
 

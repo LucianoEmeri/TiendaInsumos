@@ -2,7 +2,7 @@ export const AboutPage = () => {
 	return (
 		<div>
 			<img
-				src='https://sdygfmfocvxwbeoojqwh.supabase.co/storage/v1/object/public/product-images/img/aboutus.jpg?t=2025-01-19T09%3A47%3A31.657Z'
+				src='https://sdygfmfocvxwbeoojqwh.supabase.co/storage/v1/object/public/product-images/img/aboutus.webp'
 				alt='Imagen de fondo'
 				className='absolute top-16 left-0 w-screen h-[500px] object-cover'
 			/>

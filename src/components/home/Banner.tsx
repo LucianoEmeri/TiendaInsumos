@@ -7,7 +7,7 @@ export const Banner = () => {
 			<div
 				className='absolute inset-0 bg-cover bg-center opacity-70 h-full'
 				style={{
-					backgroundImage: 'url(https://sdygfmfocvxwbeoojqwh.supabase.co/storage/v1/object/public/product-images/img/banner.jpg?t=2025-01-19T09%3A54%3A46.875Z)',
+					backgroundImage: 'url(https://sdygfmfocvxwbeoojqwh.supabase.co/storage/v1/object/public/product-images/img/banner.webp)',
 				}}
 			/>
 
