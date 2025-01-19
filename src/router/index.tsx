@@ -11,6 +11,7 @@ import { DashboardProductSlugPage } from '../pages/dashboard/DashboardProductSlu
 import { DashboardOrdersPage } from '../pages/dashboard/DashboardOrdersPage';
 import { DashboardOrderPage } from '../pages/dashboard/DashboardOrderPage';
 import { OrderUserPage } from '../pages/OrderUserPage';
+import NotFoundPage from '../pages/NotFoundPage';
 
 export const router = createBrowserRouter([
 	{
@@ -98,5 +99,9 @@ export const router = createBrowserRouter([
 				element: <DashboardOrderPage />,
 			},
 		],
+	},
+	{
+		path: '*',
+		element: <NotFoundPage />,
 	},
 ]);
