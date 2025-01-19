@@ -6,7 +6,9 @@ export const Banner = () => {
 			{/* IMAGEN DE FONDO */}
 			<div
 				className='absolute inset-0 bg-cover bg-center opacity-70 h-full'
-				style={{ backgroundImage: 'url(/img/img-banner.jpg)' }}
+				style={{
+					backgroundImage: 'url(https://sdygfmfocvxwbeoojqwh.supabase.co/storage/v1/object/public/product-images/img/banner.jpg?t=2025-01-19T09%3A54%3A46.875Z)',
+				}}
 			/>
 
 			{/* OVERLAY */}

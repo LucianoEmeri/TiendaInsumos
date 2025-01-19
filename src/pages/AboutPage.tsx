@@ -2,7 +2,7 @@ export const AboutPage = () => {
 	return (
 		<div>
 			<img
-				src='https://img.freepik.com/foto-gratis/trabajadores-fabrica-ropa-trabajo-cascos-amarillos-caminando-sala-produccion-industrial-discutiendo-sobre-plazo-entrega_342744-230.jpg?t=st=1737062143~exp=1737065743~hmac=af9ba8c6f8e2206f2f862a2184ee5a52fd0f141d5c29b760969c2445f2f28454&w=1380'
+				src='https://sdygfmfocvxwbeoojqwh.supabase.co/storage/v1/object/public/product-images/img/aboutus.jpg?t=2025-01-19T09%3A47%3A31.657Z'
 				alt='Imagen de fondo'
 				className='absolute top-16 left-0 w-screen h-[500px] object-cover'
 			/>
