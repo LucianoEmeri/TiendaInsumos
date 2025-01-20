@@ -6,6 +6,8 @@ import { Newsletter } from '../components/home/Newsletter';
 import { Sheet } from '../components/shared/Sheet';
 import { useGlobalStore } from '../store/global.store';
 import { NavbarMobile } from '../components/shared/NavbarMobile';
+import WhatsAppButton from '../components/shared/WhatsAppButton';
+
 
 export const RootLayout = () => {
 	const { pathname } = useLocation();
@@ -26,11 +28,16 @@ export const RootLayout = () => {
 				{pathname === '/' && <Newsletter />}
 			</div>
 
-			{isSheetOpen && <Sheet/>}
+			{isSheetOpen && <Sheet />}
 
-			{setActiveNavMobile && <NavbarMobile/>}
+			{setActiveNavMobile && <NavbarMobile />}
 
 			<Footer />
+
+			<WhatsAppButton
+				phoneNumber="+543435048422"
+				message="Hola, estoy interesado en sus productos."
+			/>
 		</div>
 	);
 };
